@@ -139,8 +139,8 @@ export async function say(content:string, options?: DecOptions): Promise<Buffer>
 		});
 
 		// Redirect dectalk output to the console
-		dec.stdout.on('data', console.log);
-		dec.stderr.on('data', console.error);
+		// dec.stdout.on('data', console.log);
+		// dec.stderr.on('data', console.error);
 
 		dec.on('close', code => {
 			if(exited){

@@ -132,8 +132,8 @@ function say(content, options) {
                         exited = true;
                     });
                     // Redirect dectalk output to the console
-                    dec.stdout.on('data', console.log);
-                    dec.stderr.on('data', console.error);
+                    // dec.stdout.on('data', console.log);
+                    // dec.stderr.on('data', console.error);
                     dec.on('close', function (code) {
                         if (exited) {
                             return;
